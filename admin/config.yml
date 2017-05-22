@@ -9,12 +9,29 @@ media_folder: "content/uploads" # Folder where user uploaded files should go
 publish_mode: editorial_workflow
 
 collections: # A list of collections the CMS should be able to edit
+  - name: "engage"
+    label: "Engage Overview"
+    files:
+      - file: "site/content/engage/engage.md"
+  - name: "engage_using_profiles"
+    label: "Engage Using Profiles"
+    files:
+      - file: "site/content/engage/engage_using_profiles.md"
+  - name: "engage_proof_of_concept"
+    label: "Engage PoC"
+    files:
+      - file: "site/content/engage/engage_proof_of_concept.md"
+  - name: "engage_proof_of_concept"
+    label: "Engage PoC"
+    files:
+      - file: "site/content/engage/engage_proof_of_concept.md"
   - name: "user_stories"
     label: "User Stories"
+    create: true # Allow users to create new documents in this collection
     files:
-      - file: "site/content/products.md"
+      - file: "site/content/engage/engage_user_stories.md"
         label: "User Stories Page"
-        name: "products"
+        name: "engage_user_story"
         fields:
           - {label: Title, name: title, widget: string}
           - {label: Type, name: type, widget: hidden, default: products}
@@ -22,6 +39,22 @@ collections: # A list of collections the CMS should be able to edit
           - {label: Image, name: image, widget: image}
           - {label: Heading, name: heading, widget: string}
           - {label: Description, name: description, widget: string}
+          - {label: Story, name: story, widget: string}
+  - name: "case_studies"
+    label: "Case Studies"
+    create: true # Allow users to create new documents in this collection
+    files:
+      - file: "site/content/engage/engage_case_studies.md"
+        label: "Case Study"
+        name: "engage_case_study"
+        fields:
+          - {label: Title, name: title, widget: string}
+          - {label: Type, name: type, widget: hidden, default: products}
+          - {label: Page, name: page, widget: hidden, default: "/products.html"}
+          - {label: Image, name: image, widget: image}
+          - {label: Heading, name: heading, widget: string}
+          - {label: Description, name: description, widget: string}
+          - {label: Story, name: story, widget: string}
   - name: "post" # Used in routes, ie.: /admin/collections/:slug/edit
     label: "Post" # Used in the UI, ie.: "New Post"
     folder: "_posts" # The path to the folder where the documents are stored
