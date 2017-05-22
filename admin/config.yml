@@ -10,8 +10,11 @@ publish_mode: editorial_workflow
 
 collections: # A list of collections the CMS should be able to edit
   - name: "engage"
-    label: "Engage Overview"
+    label: "Engage"
     files:
+    - name: "engage_overview"
+      label: "Engage Overview"
+      file: "site/content/engage/engage.md"
     - name: "engage_using_profiles"
       label: "Engage Using Profiles"
       file: "site/content/engage/engage_using_profiles.md"
