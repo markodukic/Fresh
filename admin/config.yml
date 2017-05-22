@@ -1,8 +1,7 @@
-production:
-  backend:
-    name: github
-    repo: markodukic/Fresh # Path to your Github repository
-    branch: master # Branch to update (master by default)
+backend:
+  name: github
+  repo: markodukic/Fresh # Path to your Github repository
+  branch: master # Branch to update (master by default)
 
 public_folder: "content" # does this do anything?
 # media_folder: "content/uploads" # Folder where user uploaded files should go
