@@ -4,22 +4,22 @@ backend:
   branch: master # Branch to update (master by default)
 
 public_folder: "content" # does this do anything?
-# media_folder: "content/uploads" # Folder where user uploaded files should go
+media_folder: "content/uploads" # Folder where user uploaded files should go
 
-# publish_mode: editorial_workflow
+publish_mode: editorial_workflow
 
-# collections: # A list of collections the CMS should be able to edit
-#   - name: "user_stories"
-#     label: "User Stories"
-#     files:
-#       - file: "site/content/products.md"
-#         label: "User Stories Page"
-#         name: "products"
-#         fields:
-#           - {label: Title, name: title, widget: string}
-#           - {label: Type, name: type, widget: hidden, default: products}
-#           - {label: Page, name: page, widget: hidden, default: "/products.html"}
-#           - {label: Image, name: image, widget: image}
-#           - {label: Heading, name: heading, widget: string}
-#           - {label: Description, name: description, widget: string}
+collections: # A list of collections the CMS should be able to edit
+  - name: "user_stories"
+    label: "User Stories"
+    files:
+      - file: "site/content/products.md"
+        label: "User Stories Page"
+        name: "products"
+        fields:
+          - {label: Title, name: title, widget: string}
+          - {label: Type, name: type, widget: hidden, default: products}
+          - {label: Page, name: page, widget: hidden, default: "/products.html"}
+          - {label: Image, name: image, widget: image}
+          - {label: Heading, name: heading, widget: string}
+          - {label: Description, name: description, widget: string}
 
