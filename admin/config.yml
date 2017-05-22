@@ -1,12 +1,7 @@
-development:
-  backend:
-    name: netlify-api
-    url: 127.0.0.1:4005
-
 production:
   backend:
     name: github-api
-    repo: owner/repo # Path to your Github repository
+    repo: markodukic/Fresh # Path to your Github repository
     branch: master # Branch to update (master by default)
 
 publish_mode: editorial_workflow
