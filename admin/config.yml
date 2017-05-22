@@ -6,7 +6,7 @@ production:
 
 publish_mode: editorial_workflow
 
-public_folder: "content"
+public_folder: "content" # does this do anything?
 media_folder: "content/uploads" # Folder where user uploaded files should go
 
 collections: # A list of collections the CMS should be able to edit
