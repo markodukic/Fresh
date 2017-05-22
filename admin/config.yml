@@ -1,6 +1,6 @@
 production:
   backend:
-    name: github-api
+    name: github
     repo: markodukic/Fresh # Path to your Github repository
     branch: master # Branch to update (master by default)
 
