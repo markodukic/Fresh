@@ -30,20 +30,20 @@ collections: # A list of collections the CMS should be able to edit
     - name: "engage_user_stories"
       label: "User Story"
       file: "site/content/engage/engage_user_stories.md"
-    - name: "engage_feature_add"
-      label: "Add a feature"
-      files:
-        - file: "site/content/engage/engage_feature.md"
-          label: "Feature [contains User Stories]"
-          name: "engage_feature"
-          fields:
-            - {label: Title, name: title, widget: string}
-            - {label: Image, name: image, widget: image}
-            - {label: Scenario, name: scenario, widget: string}
-            - {label: Conversations, name: conversations, widget: string}
-            - {label: Story, name: story, widget: string}
-            - {label: Post, name: post, widget: string}
-            - {label: Search, name: search, widget: string}
+  - name: "engage_feature_add"
+    label: "Add a feature"
+    files:
+      - file: "site/content/engage/engage_feature.md"
+        label: "Feature [contains User Stories]"
+        name: "engage_feature"
+        fields:
+          - {label: Title, name: title, widget: string}
+          - {label: Image, name: image, widget: image}
+          - {label: Scenario, name: scenario, widget: string}
+          - {label: Conversations, name: conversations, widget: string}
+          - {label: Story, name: story, widget: string}
+          - {label: Post, name: post, widget: string}
+          - {label: Search, name: search, widget: string}
   - name: "user_stories"
     label: "User Stories"
     create: true # Allow users to create new documents in this collection
