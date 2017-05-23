@@ -40,7 +40,6 @@ collections: # A list of collections the CMS should be able to edit
         - {label: Story, name: story, widget: string}
   - name: "engage_feature_add"
     label: "Add a feature"
-    create: true # Allow users to create new documents in this collection
     slug: "feature-{{slug}}"
     directory: "content/features"
     create: true # Allow users to create new documents in this collection
