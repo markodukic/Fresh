@@ -41,17 +41,21 @@ collections: # A list of collections the CMS should be able to edit
   - name: "engage_feature_add"
     label: "Add a feature"
     create: true # Allow users to create new documents in this collection
-    slug: "Feature-{{slug}}"
-    fields:
-      - {label: Title, name: title, widget: string}
-      - {label: Image, name: image, widget: image}
-      - {label: Scenario, name: scenario, widget: string}
-      - {label: Conversations, name: conversations, widget: string}
-      - {label: Story, name: story, widget: string}
-      - {label: Post, name: post, widget: string}
-      - {label: Search, name: search, widget: string}
-    meta: # Meta data fields. Just like fields, but without any preview element
-      - {label: "Publish Date", name: "date", widget: "datetime", format: "YYYY-MM-DD hh:mm:ss"}
+    slug: "feature-{{slug}}"
+    directory: "content/features"
+    create: true # Allow users to create new documents in this collection
+    files:
+      - file: "site/content/engage/engage_feature.md"
+        fields:
+          - {label: Title, name: title, widget: string}
+          - {label: Image, name: image, widget: image}
+          - {label: Scenario, name: scenario, widget: string}
+          - {label: Conversations, name: conversations, widget: string}
+          - {label: Story, name: story, widget: string}
+          - {label: Post, name: post, widget: string}
+          - {label: Search, name: search, widget: string}
+        meta: # Meta data fields. Just like fields, but without any preview element
+          - {label: "Publish Date", name: "date", widget: "datetime", format: "YYYY-MM-DD hh:mm:ss"}
 
   - name: "case_studies"
     label: "Case Studies"
