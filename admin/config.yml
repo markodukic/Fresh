@@ -2,6 +2,7 @@ backend:
   name: github
   repo: markodukic/Fresh # Path to your Github repository
   branch: master # Branch to update (master by default)
+  site_domain: fresh-example.netlify.com
 
 public_folder: "content" # does this do anything?
 media_folder: "content/uploads" # Folder where user uploaded files should go
@@ -47,9 +48,9 @@ collections: # A list of collections the CMS should be able to edit
       - {label: Title, name: title, widget: string}
       - {label: Type, name: type, widget: hidden, default: story}
       - {label: Page, name: page, widget: hidden, default: "/feature.html"}
-      - {label: Image, name: image, widget: image}
+      - {label: Image, name: image, widget: image, required: false}
       - {label: Scenario, name: scenario, widget: string}
-      - {label: Conversations, name: conversations, widget: string}
+      - {label: Conversations, name: conversations, widget: string, required: false}
       - {label: Story, name: story, widget: markdown}
       - {label: Post, name: post, widget: string}
       - {label: Search, name: search, widget: string}
