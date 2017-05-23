@@ -33,7 +33,7 @@ collections: # A list of collections the CMS should be able to edit
       fields:
         - {label: Title, name: title, widget: string}
         - {label: Type, name: type, widget: hidden, default: products}
-        - {label: Page, name: page, widget: hidden, default: "/products.html"}
+        - {label: Page, name: page, widget: hidden, default: "/user_story.html"}
         - {label: Image, name: image, widget: image}
         - {label: Heading, name: heading, widget: string}
         - {label: Description, name: description, widget: string}
@@ -45,6 +45,7 @@ collections: # A list of collections the CMS should be able to edit
     slug: "feature-{{slug}}"
     fields:
       - {label: Title, name: title, widget: string}
+      - {label: Page, name: page, widget: hidden, default: "/feature.html"}
       - {label: Image, name: image, widget: image}
       - {label: Scenario, name: scenario, widget: string}
       - {label: Conversations, name: conversations, widget: string}
