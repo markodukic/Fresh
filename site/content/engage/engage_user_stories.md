@@ -1,10 +1,19 @@
 ---
-title: User Stories | Care Connect API | FHIR&reg; 
-keywords: usecase,use case, user stories, epics, scenarios, nhsnumber
-tags: [foundations,use_case,user stories, epics, scenarios]
-sidebar: engage_sidebar
+heading: Hello
+keywords: 'usecase,use case, user stories, epics, scenarios, nhsnumber'
 permalink: engage_user_stories.html
-summary: "User stories to search for a Care Connect FHIR&reg; Profile."
+story: now
+summary: User stories to search for a Care Connect FHIR&reg; Profile.
+tags:
+  - foundations
+  - use_case
+  - user stories
+  - epics
+  - scenarios
+title: User Stories | Care Connect API | FHIR&reg;
+image: /content/michaels_story-epic_1.jpg
+description: TEmp
+sidebar: engage_sidebar
 ---
 
 {% include important.html content="This page has been added to promote discussion in INTEROPen of the use cases and scenarios. This project is being developed using an agile methodology so iterative updates to content will be added on a regular basis." %}
@@ -69,4 +78,5 @@ This example refers to the reconciliation being performed by the doctor. The sto
 | As a pharmacist (hospital services) I want to dispense at least a two weeks supply of medication (or locally agreed amount) to the patient based on their final list of medication at discharge to provide the patient with the correct medication as prescribed until their GP has had enough time to reconcile the patient's TTO meds with their own record and the patient has had sufficient chance to arrange a follow-up appointment if necessary. | POST <br> MedicationDispense |
 | As a pharmacist (hospital services) I want to counsel the patient to help them understand what, why, when and how to take their medications. | POST <br> Encounter |
 | As a pharmacist (hospital services) I want to prepare a "patient friendly" medication schedule to help the patient understand what, why and how to use their medication. | GET <br> MedicationStatement |
+
 
